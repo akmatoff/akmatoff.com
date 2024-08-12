@@ -44,17 +44,21 @@ export default function Home() {
           </div>
         </div>
 
-        <a
-          href="/Azim Akmatov.pdf"
-          download
-          className="underline text-muted-foreground hover:text-white duration-300"
-        >
-          Download my resume
-        </a>
+        <Reveal>
+          <a
+            href="/Azim Akmatov.pdf"
+            download
+            className="underline text-muted-foreground hover:text-white duration-300"
+          >
+            Download my resume
+          </a>
+        </Reveal>
 
-        <div className="md:hidden">
-          <Socials />
-        </div>
+        <Reveal>
+          <div className="md:hidden">
+            <Socials />
+          </div>
+        </Reveal>
       </section>
     </main>
   );
