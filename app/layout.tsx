@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Mono, Ubuntu_Mono } from "next/font/google";
 import cn from "classnames";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
 const ubuntuMono = Ubuntu_Mono({
   weight: ["400", "700"],
@@ -23,10 +24,12 @@ export default function RootLayout({
       <body
         className={cn(
           ubuntuMono.className,
-          "bg-background text-foreground px-4 md:px-40 lg:px-60 dark py-20"
+          "bg-background text-foreground dark"
         )}
       >
-        {children}
+        <Sidebar />
+
+        <section className="px-4 md:px-40 lg:px-60 py-20">{children}</section>
       </body>
     </html>
   );

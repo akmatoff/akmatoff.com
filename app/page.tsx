@@ -44,9 +44,17 @@ export default function Home() {
           </div>
         </div>
 
-        <Reveal>
+        <a
+          href="/Azim Akmatov.pdf"
+          download
+          className="underline text-muted-foreground hover:text-white duration-300"
+        >
+          Download my resume
+        </a>
+
+        <div className="md:hidden">
           <Socials />
-        </Reveal>
+        </div>
       </section>
     </main>
   );
