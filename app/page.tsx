@@ -21,10 +21,10 @@ export default function Home() {
             </Reveal>
             <Reveal>
               <p>
-                I'm a front-end developer who is passionate about bringing into
-                life great projects which will make life easier and enjoyable. I
-                believe communication and working together can lead to achieving
-                great things.
+                I&apos;m a front-end developer who is passionate about bringing
+                into life great projects which will make life easier and
+                enjoyable. I believe communication and working together can lead
+                to achieving great things.
               </p>
             </Reveal>
           </div>
