@@ -8,16 +8,22 @@ import { PiTelegramLogo } from "react-icons/pi";
 function Socials() {
   return (
     <div className="flex md:flex-col gap-6 text-2xl text-muted-foreground">
-      <a href={SOCIAL_LINKS.github} className="hover:text-white duration-300">
+      <a href={SOCIAL_LINKS.github} className="hover:text-primary duration-300">
         <LuGithub />
       </a>
-      <a href={SOCIAL_LINKS.linkedin} className="hover:text-white duration-300">
+      <a
+        href={SOCIAL_LINKS.linkedin}
+        className="hover:text-primary duration-300"
+      >
         <LuLinkedin />
       </a>
-      <a href={SOCIAL_LINKS.telegram} className="hover:text-white duration-300">
+      <a
+        href={SOCIAL_LINKS.telegram}
+        className="hover:text-primary duration-300"
+      >
         <PiTelegramLogo />
       </a>
-      <a href={SOCIAL_LINKS.email} className="hover:text-white duration-300">
+      <a href={SOCIAL_LINKS.email} className="hover:text-primary duration-300">
         <IoMailOutline />
       </a>
     </div>

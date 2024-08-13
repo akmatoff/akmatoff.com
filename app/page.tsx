@@ -1,4 +1,5 @@
 import Reveal from "@/components/Reveal";
+import SkillsSection from "@/components/SkillsSection";
 import Socials from "@/components/Socials";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
 import { WORK_EXPERIENCE } from "@/constants/common";
@@ -6,7 +7,7 @@ import { WORK_EXPERIENCE } from "@/constants/common";
 export default function Home() {
   return (
     <main className="flex flex-col items-center">
-      <section className="flex flex-col gap-4 w-full md:w-6/12 p-4">
+      <section className="flex flex-col gap-4 w-full md:8/12 lg:w-6/12 p-4">
         <Reveal>
           <h1>Azim Akmatov</h1>
         </Reveal>
@@ -27,7 +28,15 @@ export default function Home() {
                 to achieving great things.
               </p>
             </Reveal>
+            <Reveal>
+              <p>
+                When I&apos;m not programming, I&apos;m producing electronic
+                music in different genres.
+              </p>
+            </Reveal>
           </div>
+
+          <SkillsSection />
 
           <div className="text-muted-foreground">
             <Reveal>
