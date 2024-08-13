@@ -9,7 +9,7 @@ function SkillCard(props: Props) {
   const { skill } = props;
 
   return (
-    <div className="flex items-center gap-3 px-4 py-2 bg-secondary opacity-50 hover:opacity-100 duration-500 leading-normal">
+    <div className="flex items-center gap-3 px-4 py-2 bg-secondary opacity-50 hover:opacity-100 hover:text-primary duration-500 leading-normal rounded-sm">
       <skill.icon className="text-3xl" />
       {skill.title}
     </div>

@@ -31,7 +31,7 @@ export default function Home() {
             <Reveal>
               <p>
                 When I&apos;m not programming, I&apos;m producing electronic
-                music in different genres.
+                music in different genres. Also love playing guitar.
               </p>
             </Reveal>
           </div>

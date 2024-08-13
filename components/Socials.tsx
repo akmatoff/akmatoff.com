@@ -7,7 +7,7 @@ import { PiTelegramLogo } from "react-icons/pi";
 
 function Socials() {
   return (
-    <div className="flex md:flex-col gap-6 text-2xl text-muted-foreground">
+    <div className="flex gap-8 text-[1.4rem] text-muted-foreground">
       <a href={SOCIAL_LINKS.github} className="hover:text-primary duration-300">
         <LuGithub />
       </a>
