@@ -13,6 +13,7 @@ export const SOCIAL_LINKS = {
   linkedin: "https://www.linkedin.com/in/akmatoff/",
   telegram: "https://t.me/azimoffs",
   email: "mailto:azim.akmatov1@gmail.com",
+  linktree: "https://linktr.ee/jaraitsans",
 };
 
 export interface IWorkExperience {

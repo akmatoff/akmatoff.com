@@ -2,7 +2,7 @@ import Reveal from "@/components/Reveal";
 import SkillsSection from "@/components/SkillsSection";
 import Socials from "@/components/Socials";
 import WorkExperienceCard from "@/components/WorkExperienceCard";
-import { WORK_EXPERIENCE } from "@/constants/common";
+import { SOCIAL_LINKS, WORK_EXPERIENCE } from "@/constants/common";
 
 export default function Home() {
   return (
@@ -31,7 +31,14 @@ export default function Home() {
             <Reveal>
               <p>
                 When I&apos;m not programming, I&apos;m producing electronic
-                music in different genres. Also love playing guitar.
+                music in different genres. Also love playing guitar.{" "}
+                <a
+                  href={SOCIAL_LINKS.linktree}
+                  className="underline text-primary"
+                  target="__blank"
+                >
+                  Here you can find my music.
+                </a>
               </p>
             </Reveal>
           </div>
