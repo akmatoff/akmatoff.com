@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <div className="flex w-screen justify-between items-center fixed z-10 p-4 md:px-12 md:py-2 top-0 bg-background">
+    <div className="flex w-screen justify-between items-center fixed z-10 p-4 md:px-12 md:py-2 top-0 backdrop-blur-sm">
       <Image src={Logo} height={92} alt="logo" />
       <Socials />
     </div>
