@@ -1,3 +1,4 @@
+import Blog from "@/components/Blog";
 import Reveal from "@/components/Reveal";
 import SkillsSection from "@/components/SkillsSection";
 import Socials from "@/components/Socials";
@@ -74,6 +75,10 @@ export default function Home() {
           <div className="md:hidden">
             <Socials />
           </div>
+        </Reveal>
+
+        <Reveal>
+          <Blog />
         </Reveal>
       </section>
     </main>
