@@ -11,7 +11,19 @@ function Navbar() {
       <Link href="/">
         <Image src={Logo} height={92} alt="logo" />
       </Link>
-      <Socials />
+
+      <div className="flex items-center gap-8 text-muted-foreground">
+        <Link
+          href="/Azim Akmatov.pdf"
+          className="underline underline-offset-2 hover:text-foreground duration-300"
+        >
+          View resume
+        </Link>
+
+        <div className="hidden md:flex">
+          <Socials />
+        </div>
+      </div>
     </div>
   );
 }
