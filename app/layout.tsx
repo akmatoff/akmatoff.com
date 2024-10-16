@@ -3,6 +3,7 @@ import { Ubuntu_Mono } from "next/font/google";
 import cn from "classnames";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import ThemeProvider from "@/context/ThemeProvider";
 
 const ubuntuMono = Ubuntu_Mono({
   weight: ["400", "700"],
@@ -22,14 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn(
-          ubuntuMono.className,
-          "bg-background text-foreground dark"
-        )}
+        className={cn(ubuntuMono.className, "bg-background text-foreground")}
       >
-        <Navbar />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <Navbar />
 
-        <section className="px-4 md:px-40 lg:px-60 py-32">{children}</section>
+          <section className="px-4 md:px-40 lg:px-60 py-32">{children}</section>
+        </ThemeProvider>
       </body>
     </html>
   );

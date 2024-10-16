@@ -4,6 +4,7 @@ import Socials from "./Socials";
 import Logo from "@/public/akmatoff-light.png";
 import Image from "next/image";
 import Link from "next/link";
+import ThemeSwitch from "./ThemeSwitch";
 
 function Navbar() {
   return (
@@ -23,6 +24,8 @@ function Navbar() {
         <div className="hidden md:flex">
           <Socials />
         </div>
+
+        <ThemeSwitch />
       </div>
     </div>
   );
