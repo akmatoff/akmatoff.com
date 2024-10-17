@@ -16,22 +16,19 @@ function Navbar() {
 
   return (
     <div className="flex w-full h-44 justify-between items-center p-4 md:px-12 md:py-2 top-0">
-      <div className="flex items-center gap-12 uppercase text-sm text-muted-foreground">
+      <div className="flex items-center gap-12 uppercase text-sm font-semibold text-muted-foreground">
         <Link href="/">
           <Image src={logo} height={96} alt="logo" />
         </Link>
 
-        <Link
-          href="/about"
-          className="underline underline-offset-2 hover:text-foreground duration-300"
-        >
+        <Link href="/about" className="hover:text-foreground duration-300">
           About
         </Link>
 
         <Link
           href="/Azim Akmatov.pdf"
           target="_blank"
-          className="underline underline-offset-2 hover:text-foreground duration-300"
+          className="hover:text-foreground duration-300"
         >
           View resume
         </Link>

@@ -75,6 +75,6 @@
   }
 
   p {
-    @apply font-light py-1;
+    @apply font-light py-1 text-muted-foreground;
   }
 }

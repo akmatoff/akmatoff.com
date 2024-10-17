@@ -9,7 +9,7 @@ interface Props {
 
 function Reveal({ children }: Props) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const isInView = useInView(ref, { once: true, margin: "-30px" });
 
   const controls = useAnimation();
 
@@ -29,7 +29,7 @@ function Reveal({ children }: Props) {
         }}
         initial="hidden"
         animate={controls}
-        transition={{ duration: 0.9, delay: 0.1 }}
+        transition={{ duration: 0.6, delay: 0.1 }}
       >
         {children}
       </motion.div>

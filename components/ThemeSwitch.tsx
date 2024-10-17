@@ -8,12 +8,12 @@ export default function ThemeSwitch() {
 
   return theme === "light" ? (
     <IoSunny
-      className="cursor-pointer hover:text-foreground duration-300"
+      className="text-xl cursor-pointer hover:text-foreground duration-300"
       onClick={() => setTheme("dark")}
     />
   ) : (
     <IoMoon
-      className="cursor-pointer hover:text-foreground duration-300"
+      className="text-xl cursor-pointer hover:text-foreground duration-300"
       onClick={() => setTheme("light")}
     />
   );

@@ -1,9 +1,9 @@
 import React from "react";
 
 import { SOCIAL_LINKS } from "@/constants/common";
-import { LuGithub, LuLinkedin } from "react-icons/lu";
-import { IoMailOutline } from "react-icons/io5";
-import { PiTelegramLogo } from "react-icons/pi";
+import { IoMail, IoLogoLinkedin, IoLogoGithub } from "react-icons/io5";
+import { BsTelegram } from "react-icons/bs";
+
 import Link from "next/link";
 
 function Socials() {
@@ -14,28 +14,28 @@ function Socials() {
         target="_blank"
         className="hover:text-primary duration-300"
       >
-        <LuGithub />
+        <IoLogoGithub />
       </Link>
       <Link
         href={SOCIAL_LINKS.linkedin}
         target="_blank"
         className="hover:text-primary duration-300"
       >
-        <LuLinkedin />
+        <IoLogoLinkedin />
       </Link>
       <Link
         href={SOCIAL_LINKS.telegram}
         target="_blank"
         className="hover:text-primary duration-300"
       >
-        <PiTelegramLogo />
+        <BsTelegram />
       </Link>
       <Link
         href={SOCIAL_LINKS.email}
         target="_blank"
         className="hover:text-primary duration-300"
       >
-        <IoMailOutline />
+        <IoMail />
       </Link>
     </div>
   );
