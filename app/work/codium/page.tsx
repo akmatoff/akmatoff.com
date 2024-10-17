@@ -30,12 +30,12 @@ export default function CodiumPage() {
             <p>
               It&apos;s a platform for the organization{" "}
               <b className="text-foreground">&quot;Codium&quot;</b> which is
-              based in Tokmok, Kyrgyzstan and provides programming other
-              different courses to help local people to keep learning.
+              based in Tokmok, Kyrgyzstan. It provides programming and other
+              various courses to help local people to keep learning.
             </p>
             <p>
               This platform simplifies studying for students by providing
-              features to read the lectures, complete the tasks and view their
+              features to read the lectures, complete the tasks and track their
               progress. Also makes managing students, documents, tasks, lectures
               and other resources easier for teachers, managers and
               administrators.
@@ -61,10 +61,6 @@ export default function CodiumPage() {
           applications, deployment, configuring CI/CD and containerizing with
           Docker.
         </p>
-      </div>
-
-      <div>
-        <h2></h2>
       </div>
     </main>
   );

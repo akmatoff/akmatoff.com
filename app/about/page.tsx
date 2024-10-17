@@ -21,8 +21,26 @@ export default function About() {
               in React and Next.js.
             </p>
             <p>
+              I have been studying programming since 2018, before I went to
+              college. By that time, I had started learning JavaScript, having
+              previously learned HTML and CSS. I realized I needed JavaScript to
+              advance, but I initially found it quite difficult to understand.
+              My understanding of programming improved later when I studied
+              Python at college.
+            </p>
+            <p>
+              I started my first job when I was almost 19, in February 2022. I
+              joined a startup based in Singapore as an intern, where I worked
+              for 2 years. During that time, I gained a lot of valuable
+              experience.
+            </p>
+            <p>
+              Currently, I am looking for new opportunities and trying to keep
+              improving.
+            </p>
+            <p>
               When I&apos;m not programming, I&apos;m producing electronic music
-              in different genres. Also love playing guitar.{" "}
+              in various genres and also love playing the guitar.{" "}
               <a
                 href={SOCIAL_LINKS.linktree}
                 className="underline text-primary"
