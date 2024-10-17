@@ -33,7 +33,7 @@ export default function RootLayout({
             <div className="flex flex-col w-full">
               <Navbar />
 
-              <section className="px-5 md:px-10">{children}</section>
+              <section className="px-5 md:px-40">{children}</section>
             </div>
           </main>
         </ThemeProvider>

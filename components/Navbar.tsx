@@ -12,13 +12,17 @@ import { useTheme } from "next-themes";
 function Navbar() {
   const { theme } = useTheme();
 
-  const logo = useMemo(() => (theme === "dark" ? Logo : LogoDark), [theme]);
-
   return (
-    <div className="flex w-full h-44 justify-between items-center p-4 md:px-12 md:py-2 top-0">
+    <div className="flex w-full h-44 justify-between items-center p-4 md:px-40 md:py-2 top-0">
       <div className="flex items-center gap-12 uppercase text-sm font-semibold text-muted-foreground">
         <Link href="/">
-          <Image src={logo} height={96} alt="logo" />
+          {theme === "dark" && (
+            <Image src={Logo} height={96} alt="logo" loading="lazy" />
+          )}
+
+          {theme === "light" && (
+            <Image src={LogoDark} height={96} alt="logo" loading="lazy" />
+          )}
         </Link>
 
         <Link href="/about" className="hover:text-foreground duration-300">
