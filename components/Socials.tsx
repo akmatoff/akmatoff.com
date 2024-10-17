@@ -4,28 +4,39 @@ import { SOCIAL_LINKS } from "@/constants/common";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
 import { IoMailOutline } from "react-icons/io5";
 import { PiTelegramLogo } from "react-icons/pi";
+import Link from "next/link";
 
 function Socials() {
   return (
-    <div className="flex gap-8 text-[1.4rem] text-muted-foreground">
-      <a href={SOCIAL_LINKS.github} className="hover:text-primary duration-300">
+    <div className="flex flex-col gap-8 text-[1.6rem] text-muted-foreground">
+      <Link
+        href={SOCIAL_LINKS.github}
+        target="_blank"
+        className="hover:text-primary duration-300"
+      >
         <LuGithub />
-      </a>
-      <a
+      </Link>
+      <Link
         href={SOCIAL_LINKS.linkedin}
+        target="_blank"
         className="hover:text-primary duration-300"
       >
         <LuLinkedin />
-      </a>
-      <a
+      </Link>
+      <Link
         href={SOCIAL_LINKS.telegram}
+        target="_blank"
         className="hover:text-primary duration-300"
       >
         <PiTelegramLogo />
-      </a>
-      <a href={SOCIAL_LINKS.email} className="hover:text-primary duration-300">
+      </Link>
+      <Link
+        href={SOCIAL_LINKS.email}
+        target="_blank"
+        className="hover:text-primary duration-300"
+      >
         <IoMailOutline />
-      </a>
+      </Link>
     </div>
   );
 }

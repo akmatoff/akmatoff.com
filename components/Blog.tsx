@@ -8,7 +8,7 @@ function Blog() {
   return (
     <main>
       <section className="flex flex-col gap-4">
-        <h1>Blog</h1>
+        <h2>Blog</h2>
 
         <div className="flex flex-col gap-3">
           {posts.map((post) => (

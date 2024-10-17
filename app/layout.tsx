@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Ubuntu_Mono } from "next/font/google";
+import { Ubuntu_Mono, Kanit } from "next/font/google";
 import cn from "classnames";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeProvider from "@/context/ThemeProvider";
+import Sidebar from "@/components/Sidebar";
 
-const ubuntuMono = Ubuntu_Mono({
-  weight: ["400", "700"],
+const kanit = Kanit({
+  weight: ["300", "400", "700"],
   subsets: ["latin"],
 });
 
@@ -22,13 +23,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(ubuntuMono.className, "bg-background text-foreground")}
-      >
+      <body className={cn(kanit.className, "bg-background text-foreground")}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Navbar />
+          <main className="flex min-h-screen">
+            <Sidebar />
 
-          <section className="px-4 md:px-40 lg:px-60 py-32">{children}</section>
+            <div className="flex flex-col w-full">
+              <Navbar />
+
+              <section className="px-5 md:px-10">{children}</section>
+            </div>
+          </main>
         </ThemeProvider>
       </body>
     </html>
