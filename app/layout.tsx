@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Ubuntu_Mono, Kanit } from "next/font/google";
+import { Kanit } from "next/font/google";
 import cn from "classnames";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ThemeProvider from "@/context/ThemeProvider";
 import Sidebar from "@/components/Sidebar";
+import LenisWrapper from "@/components/LenisWrapper";
 
 const kanit = Kanit({
   weight: ["300", "400", "700"],
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(kanit.className, "bg-background text-foreground")}>
+        <LenisWrapper />
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <main className="flex min-h-screen">
             <Sidebar />
