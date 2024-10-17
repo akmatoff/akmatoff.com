@@ -9,7 +9,9 @@ export default function WorkSection() {
     <section className="flex flex-col w-full mt-10 gap-16">
       <div>
         <h2>Take a look at some of my work</h2>
-        <p>Here you can explore some of my projects I've been working on.</p>
+        <p>
+          Here you can explore some of my projects I&apos;ve been working on.
+        </p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-72">

@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             <div>
               <Link href={SOCIAL_LINKS.email}>
-                <Button role="link">Let's work together!</Button>
+                <Button role="link">Let&apos;s work together!</Button>
               </Link>
             </div>
           </div>

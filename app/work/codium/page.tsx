@@ -28,10 +28,10 @@ export default function CodiumPage() {
         <div className="flex flex-col text-justify justify-center flex-[1_1_0%]">
           <div>
             <p>
-              It's a platform for the organization{" "}
-              <b className="text-foreground">"Codium"</b> which is based in
-              Tokmok, Kyrgyzstan and provides programming other different
-              courses to help local people to keep learning.
+              It&apos;s a platform for the organization{" "}
+              <b className="text-foreground">&quot;Codium&quot;</b> which is
+              based in Tokmok, Kyrgyzstan and provides programming other
+              different courses to help local people to keep learning.
             </p>
             <p>
               This platform simplifies studying for students by providing

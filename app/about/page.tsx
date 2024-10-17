@@ -11,7 +11,7 @@ export default function About() {
       <section className="flex flex-col gap-8 flex-[1_1_8%]">
         <Reveal>
           <h2 className="uppercase font-semibold">
-            Hello, I'm Azim, a web-developer <br /> and musician based in
+            Hello, I&apos;m Azim, a web-developer <br /> and musician based in
             Kyrgyzstan.
           </h2>
 
